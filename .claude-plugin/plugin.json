@@ -1,0 +1,19 @@
+{
+  "name": "mayretire",
+  "displayName": "MayRetire",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Explore and stress-test Canadian retirement plans with MayRetire's calculation engine.",
+  "author": {
+    "name": "MayRetire",
+    "email": "support@mayretire.com",
+    "url": "https://mayretire.com"
+  },
+  "homepage": "https://ai.mayretire.com/",
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://ai.mayretire.com/claude.html",
+  "supportUrl": "https://ai.mayretire.com/support.html",
+  "privacyPolicyUrl": "https://ai.mayretire.com/privacy.html",
+  "termsOfServiceUrl": "https://ai.mayretire.com/terms.html",
+  "keywords": ["retirement", "Canada", "planning", "stress testing"]
+}
