@@ -58,8 +58,10 @@ the intended return method and compare modeled alternatives first.
 - Use `describe` to learn an unfamiliar field before editing. Apply a patch or
   item operations with `edit_plan_payload`; show material changes and return the
   resulting plan JSON to the user when they want to keep the scenario.
-- Call `start_plan_job` for `stress`, `monteCarlo`, `backtest`, `explore`, or
-  `optimize` when requested or when robustness matters. The server may queue
+- Call `start_stress_test_job`, `start_monte_carlo_job`, or
+  `start_backtest_job` for the corresponding risk test. Call
+  `start_exploration_job` or `start_optimization_job` for a bounded set of
+  scenarios when requested. The server may queue
   a job and report its position; poll `status_plan_job` until it runs and
   finishes, then call `result_plan_job`. Retrieve only selected candidate plans using
   `get_candidate_plan`. Use `cancel_plan_job` if the user redirects the search.

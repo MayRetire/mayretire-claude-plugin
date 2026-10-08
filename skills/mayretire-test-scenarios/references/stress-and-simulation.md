@@ -1,7 +1,7 @@
 # Stress, Monte Carlo, and backtesting
 
-`start_plan_job` accepts `kind: stress`, `monteCarlo`, or `backtest` on a
-complete `basePlan`. Poll `status_plan_job` while queued or running and get
+Use `start_stress_test_job`, `start_monte_carlo_job`, or
+`start_backtest_job` with a complete `basePlan`. Poll `status_plan_job` while queued or running and get
 the compact result through `result_plan_job`. Do not call a queued job a
 server failure. Report partial work and stop reason if a limit or cancellation
 ends a job early. Use a bounded result view rather than dumping full annual

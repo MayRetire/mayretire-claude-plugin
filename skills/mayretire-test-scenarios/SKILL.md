@@ -16,7 +16,7 @@ Read [scenario design](references/scenario-design.md) before edits or search.
 Use `compare_plan_payloads` for small independent patches and deterministic
 screening. Use `edit_plan_payload` for a selected complete plan or item
 operations; show the diff and validate the result. For larger exploration or
-optimization, use `start_plan_job` with a bounded request, poll
+optimization, use `start_exploration_job` or `start_optimization_job` with a bounded request, poll
 `status_plan_job`, collect `result_plan_job`, and retrieve only selected
 candidate plans with `get_candidate_plan`. Cancel work the user no longer
 needs. Search results describe the evaluated candidate space, not every

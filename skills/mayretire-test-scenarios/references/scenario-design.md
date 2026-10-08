@@ -13,8 +13,8 @@ intended array. `edit_plan_payload` can instead apply item operations by stable
 ID. Inspect and preserve enabled withdrawal overrides unless changes are
 authorized. Validate the modified plan and report the material diff.
 
-For broad `explore` or `optimize` jobs, use a bounded CLI-compatible search
-request with either explicit variables or named scenarios. Describe the actual
+For broad `start_exploration_job` or `start_optimization_job` jobs, use a
+bounded search request with either explicit variables or named scenarios. Describe the actual
 candidate set and objective. Screen deterministic candidates before expensive
 simulation unless success-rate optimization is specifically requested. Check
 the returned `searchScope`, evaluation count, stop reason, and whether the
